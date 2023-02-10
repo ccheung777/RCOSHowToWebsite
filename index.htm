@@ -6,12 +6,13 @@
     <meta name="viewport" content="width-device-width, initial-scale = 1.0">
 	<title>Personal Portfolio Website</title>
     <link rel="stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/46dd8c6964.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo.png" alt="logo" height = 300 width = 300>
+            <img src="images/logo3.png" alt="logo" height = 300 width = 300>
             <ul>
                 <li> <a href="#"> Home</a></li>
                 <li> <a href="#"> About</a></li>
@@ -22,7 +23,7 @@
         </nav>
         <div class="header-text">
             <p>My First Personal Website</p>
-            <h1>Hi this is <span> first</span> personal website.</h1>
+            <h1>Hi this is <span> first </span> <br> personal website.</h1>
         </div>
     </div>
 </div>
@@ -31,7 +32,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/user.png">
+                <img src="images/background.png">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -39,34 +40,113 @@
                     KNGLKJALJGLJFGJLDGLJFDG.</p>
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link">Skills</p>
-                    <p class="tab-links">Experience</p>
-                    <p class="tab-links">Education</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>UI?UX</span> <br> Designing Web/App Interface</li>
-                        <li><span>Web Development </span> <br> Designing Web/App Interface</li>
-                        <li><span>App Development</span> <br> Designing Web/App Interface</li>
+                        <li><span> Languages </span> <br> English and Cantonese </li>
+                        <li><span> Hard Skills </span> <br> Python, C++, HTML, CSS, Java, RStudio</li>
+                        <li><span> Soft Skills </span> <br> Leadership, Teamwork, Attention to Detail, Collaboration</li>
                     </ul>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>UI?UX</span> <br> Designing Web/App Interface</li>
-                        <li><span>Web Development </span> <br> Designing Web/App Interface</li>
-                        <li><span>App Development</span> <br> Designing Web/App Interface</li>
+                        <li><span> 2022-2023 </span> <br> Society of Asian Scientists and Engineers Freshman Representative</li>
+                        <li><span> 2021-2022 </span> <br> CSIHS Senior Council</li>
+                        <li><span> 2018-2022 </span> <br> PSAL Girl's Varsity Flag Football</li>
+                        <li><span> 2018-2022 </span> <br> PSAL Girl's Varsity Volleyball</li>
                     </ul>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>UI?UX</span> <br> Designing Web/App Interface</li>
-                        <li><span>Web Development </span> <br> Designing Web/App Interface</li>
-                        <li><span>App Development</span> <br> Designing Web/App Interface</li>
+                        <li><span> 2022-2026 </span> <br> Rensselaer Polytechnic Institute</li>
+                        <li><span> 2018-2022 </span> <br> CSI High School for International Studies</li>
+                        <li><span> 2009-2018 </span> <br> Michael J. Petrides </li>
                     </ul>
                 </div>
         </div>
     </div>
 </div>
+
+<!-------------- services -------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-face-smile"></i>                
+                <h2>Title One</h2>
+                    <p>DESCRIPTION DESCRIPTION DESCRIPTION</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-face-smile"></i>
+                <h2>Title Two</h2>
+                <p>DESCRIPTION DESCRIPTION DESCRIPTION</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-face-smile"></i>
+                <h2>Title Three</h2>
+                <p>DESCRIPTION DESCRIPTION DESCRIPTION</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------- portfolio -------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>WORDS WORDS WORDS WORDS WORDS WORDS</p>
+                    <a href="#"> <i class="fa-solid fa-up-right-from-square"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Bear Number Two</h3>
+                    <p>WORDS WORDS WORDS WORDS WORDS WORDS</p>
+                    <a href="#"> <i class="fa-solid fa-up-right-from-square"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Bear Number Three</h3>
+                    <p>WORDS WORDS WORDS WORDS WORDS WORDS</p>
+                    <a href="#"> <i class="fa-solid fa-up-right-from-square"></i> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
 
 </body>
 </html>
