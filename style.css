@@ -5,6 +5,9 @@
     box-sizing: border-box;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #fff;
     color: rgb(0, 0, 0);
@@ -335,9 +338,56 @@ form .btn2{
     color: #E5BCFF;
 }
 
-/*-------------- css for small screens -------------- */
-@media only screen and (max-with: 600px){
+
+
+
+
+/*-------------- css for small screens -------------- 
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/);
+        background-image: url(images/trial.png)
     }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #fff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}
+*/
+
+
+
+#msg{
+    color: #BB8CEA;
+    margin-top: -40px;
+    display: block;
 }
