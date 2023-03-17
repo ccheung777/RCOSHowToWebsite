@@ -6,36 +6,205 @@
     <meta name="viewport" content="width-device-width, initial-scale = 1.0">
 	<title>Personal Portfolio Website</title>
     <link rel="stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/46dd8c6964.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo.png" alt="logo" height = 300 width = 300>
+            <img src="logo3.png" alt="logo" height = 300 width = 300>
             <ul>
-                <li> <a href="#"> Home</a></li>
-                <li> <a href="#"> About</a></li>
-                <li> <a href="#"> Services</a></li>
-                <li> <a href="#"> Portfolio</a></li>
-                <li> <a href="#"> Contact</a></li>
+                <li> <a href="#header"> <strong>Home</strong></a></li>
+                <li> <a href="#about"> <strong>About</strong></a></li>
+                <li> <a href="#services"> <strong>Services</strong></a></li>
+                <li> <a href="#portfolio"> <strong>Portfolio</strong></a></li>
+                <li> <a href="#contact"> <strong>Contact</strong></a></li>
+                <!--------------  <i class="fa-solid fa-circle-xmark"></i> -------------->
             </ul>
+            <!-------------- <i class="fa-solid fa-bars"></i>-------------->
         </nav>
         <div class="header-text">
             <p>My First Personal Website</p>
-            <h1>Hi this is my <span>first</span> <br>personal website.</h1>
+            <h1>Hi this is <span> first </span> <br> personal website.</h1>
         </div>
     </div>
 </div>
+<!-------------- about -------------->
 <div id= "about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/user.png" height = 300 width = 400>
+                <img src="user1.png">
             </div>
-            <div class="about-col-2"></div>
-            <h1>About Me</h1>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Celine and welcome to my personal website! 
+                    <br>
+                    I used HTML, CSS, and Java to create what you see. 
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span> Languages </span> <br> English and Cantonese </li>
+                        <li><span> Hard Skills </span> <br> Python, C++, HTML, CSS, Java, RStudio</li>
+                        <li><span> Soft Skills </span> <br> Leadership, Teamwork, Attention to Detail, Collaboration</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span> 2022-2023 </span> <br> Society of Asian Scientists and Engineers Freshman Representative</li>
+                        <li><span> 2021-2022 </span> <br> CSIHS Senior Council</li>
+                        <li><span> 2018-2022 </span> <br> PSAL Girl's Varsity Flag Football</li>
+                        <li><span> 2018-2022 </span> <br> PSAL Girl's Varsity Volleyball</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span> 2022-2026 </span> <br> Rensselaer Polytechnic Institute</li>
+                        <li><span> 2018-2022 </span> <br> CSI High School for International Studies</li>
+                        <li><span> 2009-2018 </span> <br> Michael J. Petrides </li>
+                    </ul>
+                </div>
         </div>
     </div>
 </div>
+
+<!-------------- services -------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-face-smile"></i>                
+                <h2>Title One</h2>
+                    <p>DESCRIPTION DESCRIPTION DESCRIPTION</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-face-smile"></i>
+                <h2>Title Two</h2>
+                <p>DESCRIPTION DESCRIPTION DESCRIPTION</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-face-smile"></i>
+                <h2>Title Three</h2>
+                <p>DESCRIPTION DESCRIPTION DESCRIPTION</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------- portfolio -------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>WORDS WORDS WORDS WORDS WORDS WORDS</p>
+                    <a href="#"> <i class="fa-solid fa-up-right-from-square"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Bear Number Two</h3>
+                    <p>WORDS WORDS WORDS WORDS WORDS WORDS</p>
+                    <a href="#"> <i class="fa-solid fa-up-right-from-square"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Bear Number Three</h3>
+                    <p>WORDS WORDS WORDS WORDS WORDS WORDS</p>
+                    <a href="#"> <i class="fa-solid fa-up-right-from-square"></i> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn"> See more</a>
+</div>
+
+
+<!-------------- contact -------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> celinec0778@gmail.co</p>
+                <p><i class="fa-solid fa-square-phone"></i>0129019210921902</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder= "Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Celine. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzYt9q45FEySIsML2B3BbFBMGT-kJXRkacDoXQjsVQ7YWojZ0b77xPH-4pPMNKObLm5/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
 </body>
 </html>
