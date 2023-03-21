@@ -178,8 +178,8 @@ nav ul li a:hover::after{
 }
 
 .services-list div:hover{
-    background: #BB8CEA;
-    color: #fff;
+    background: #e7e4ea;
+    color: #000000;
     transform: translateY(-10px);
 }
 
